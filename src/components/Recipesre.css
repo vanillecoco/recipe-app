@@ -1,0 +1,39 @@
+.active_div {
+    /* height:100vh;
+    background:inear-gradient (97deg, lightpink, rgb(156, 108, 156)); */
+}
+.div_recipe {
+    background:white;
+    float:left; 
+    margin:4%;
+    width:40%;
+    height:600px;
+    border:1px solid grey;
+    box-shadow:3px 3px 3px 3px #9E9E9E;
+    border-radius:10px;
+}  
+  
+.up_div{
+    height:422px;
+} 
+   
+li{
+        list-style:none;
+        text-align:left;
+        margin-left:60px;
+    }
+      
+ 
+.bottom_div{
+    height:170px;
+    margin-bottom:5px; }
+
+p {
+   font-weight:bold;
+}
+img {
+    width:150px;
+    height:150px;
+    border-radius:70%; 
+    overflow:hidden; 
+}

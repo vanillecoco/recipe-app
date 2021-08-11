@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Recipes.module.css';
+import './Recipes.css';
+import './Recipesre.css';
   
 const Recipes =() => {
   const APP_ID ="7ad88b6a";
@@ -43,9 +44,9 @@ const Recipes =() => {
           <button className="button" type="submit">Search </button>
         </form>
         {recipes.map((recipe,index) =>(
-           
-          <div key={index} className ="div_recipe" style={{background:'white',float:'left',margin:'4%',width:'40%',height:"600px", border:'1px solid grey', boxShadow:'3px 3px 3px 3px #9E9E9E', borderRadius:'10px'}}>
-            <div style={{height:'422px'}}>
+           <div className="active_div">
+          <div key={index} className ="div_recipe" >
+            <div className ="up_div">
                 <br/>
                 <h1>Title: {recipe.recipe.label}</h1><br/>
 
@@ -53,18 +54,18 @@ const Recipes =() => {
                 {/* <li>{recipe.recipe.ingredients[0].text}</li> */}
                 
                 {recipe.recipe.ingredients.map((results, index) =>(
-                    <li key={index} style={{listStyle:'none',textAlign:'left',marginLeft:'60px'}}>{results.text}</li>
+                    <li key={index} >{results.text}</li>
                 ))}
                 
                 </ul>
                 
             </div>
-            <div style={{height:'170px', marginBottom:'5px'}}>
-                <p style={{fontWeight:'bold'}}>Calories: {recipe.recipe.calories}</p>
-                <img src={recipe.recipe.image} alt="recipe_image" style={{width:'150px', height:'150px', borderRadius:'70%', overflow:'hidden'}}/>
+            <div className="bottom_div">
+                <p >Calories: {recipe.recipe.calories}</p>
+                <img src={recipe.recipe.image} alt="recipe_image" />
             </div>
           </div>
-         
+          </div>
         ))}
         {/* {recipes.map(recipe =>(
           <h1>{recipe.recipe.label}</h1>
