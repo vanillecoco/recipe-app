@@ -1,7 +1,35 @@
+
+*{
+    padding:0;
+    margin: 0 auto;
+}
+
 .active_div {
     /* height:100vh;
     background:inear-gradient (97deg, lightpink, rgb(156, 108, 156)); */
 }
+
+@media screen and (max-width: 1900px) and (min-width: 950px){
+
+    button {
+        background-color: rgb(94, 0, 94);
+        color:white;
+        width:10%;
+        padding:10px;
+    }
+    input {
+        width:50%;
+        padding:10px;
+        text-align: center;
+        background-color: white;
+        border:1px solid blue;
+        margin-top:30px;
+    }
+    .recipes{
+        background:linear-gradient( 97deg, lightpink, rgb(156, 108, 156) );
+    }
+
+    
 .div_recipe {
     background:white;
     float:left; 
@@ -36,4 +64,65 @@ img {
     height:150px;
     border-radius:70%; 
     overflow:hidden; 
+}
+
+}
+
+@media screen and (max-width: 949px) and (min-width: 300px){
+
+    button {
+        background-color: rgb(94, 0, 94);
+        color:white;
+        width:30%;
+        padding:10px;
+    }
+    input {
+        width:60%;
+        padding:10px;
+        text-align: center;
+        background-color: white;
+        border:1px solid blue;
+        margin-top:30px;
+    }
+    .recipes{
+        background:linear-gradient( 97deg, lightpink, rgb(156, 108, 156) );
+    }
+
+    
+.div_recipe {
+    background:white;
+    float:left; 
+    margin:4%;
+    width:90%;
+    height:650px;
+    border:1px solid grey;
+    box-shadow:3px 3px 3px 3px #9E9E9E;
+    border-radius:10px;
+}  
+  
+.up_div{
+    height:450px;
+} 
+   
+li{
+        list-style:none;
+        text-align:left;
+        margin-left:20px;
+    }
+      
+ 
+.bottom_div{
+    height:170px;
+    margin-bottom:3px; }
+
+p {
+   font-weight:bold;
+}
+img {
+    width:150px;
+    height:150px;
+    border-radius:70%; 
+    overflow:hidden; 
+}
+
 }
